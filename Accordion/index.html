@@ -52,7 +52,9 @@
 			}
 
 			function toggleAnswer(){
-				this.nextElementSibling.classList.toggle('show');
+				if(this.nextElementSibling.tagName === "DIV"){
+					this.nextElementSibling.classList.toggle('show');
+				}
 			}
 
 			Accordion();
